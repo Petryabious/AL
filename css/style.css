@@ -460,6 +460,7 @@ a{
 .footer__email {
   position: relative;
   padding-left: 22.5px;
+  transition: all 0.3s ease-in;
 }
 .footer__email::before,.footer__phone::before,.footer__address::before, .footer__about-lang::before{
   content: "";
@@ -477,6 +478,7 @@ a{
 .footer__phone {
   position: relative;
   padding-left: 22.5px;
+  transition: all 0.3s ease-in;
 }
 .footer__phone::before{
   width: 13px;
@@ -486,11 +488,18 @@ a{
 .footer__address {
   position: relative;
   padding-left: 23.5px;
+  transition: all 0.3s ease-in;
+  display: block;
 }
 .footer__address::before {
   width: 14px;
   height: 17px;
   background: url("../img/footer/map.svg");
+}
+
+.footer__email:hover, .footer__phone:hover, .footer__address:hover {
+  color: #ffffffc7;
+  transform: translateY(-3px);
 }
 .footer__information {}
 .footer-menu {}
@@ -518,6 +527,7 @@ a{
 }
 .footer-menu__link {
   color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease-in;
 }
 
 .footer__footer-menu {}
@@ -533,7 +543,10 @@ a{
   display: block;
   margin: 0 0 20px 0;
   font-weight: 500;
-
+  transition: all .3s ease-in;
+}
+.footer-menu__link:hover, .footer__about-site:hover{
+  color: #4a83e7;
 }
 .footer__about-social-network {
   margin: 0 0 47.5px 0;
@@ -542,10 +555,32 @@ a{
   align-items: center;
   max-width: 175px;
 }
+.footer__about-social-network > a{
+  transition: all .3s ease-in;
+}
+.footer__about-social-network > a:hover{
+  transform: translateY(-3px);
+}
+.footer__about-social-network > a:nth-child(1):hover path{
+  fill: #4a83e7;
+}
+.footer__about-social-network > a:nth-child(2):hover path{
+  fill: #D64763;
+}
+.footer__about-social-network > a:nth-child(3):hover path{
+  fill: #ffffffcb;
+}
+.footer__about-social-network > a:nth-child(4):hover path{
+  fill: #FF3366;
+}
+.footer__about-social-network > a:nth-child(5):hover path{
+  fill: #F40000;
+}
 .footer__about-lang {
   position: relative;
   padding: 0 20px;
   display: inline-block;
+  transition: all .3s ease;
 }
 
 .footer__about-lang::before{
@@ -562,4 +597,17 @@ a{
   width: 11px;
   height: 7px;
   background: url("../img/footer/arrow.svg");
+}
+
+.footer__about-lang-content{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+  padding: 0 20px;
+}
+
+.footer__about-lang:hover .footer__about-lang-content  {
+  display: block;
 }
