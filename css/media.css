@@ -176,6 +176,7 @@
     .footer__footer-menu .footer__title,
     .footer__useful-links .footer__title {
         margin: 0;
+        padding-right: 20px;
     }
     .footer__information .footer__title.active,
     .footer__footer-menu .footer__title.active,
@@ -260,6 +261,10 @@
       }
       .footer{
         padding: 50px 0;
+    }
+
+    .footer__about {
+        padding-top: 0;
     }
 }
 /* ---------------------731------------------------------- */
