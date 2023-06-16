@@ -513,12 +513,14 @@ a{
 }
 .footer__information {}
 .footer-menu {}
+
 .footer__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: #FFFFFF;
  position: relative;
+ pointer-events: none;
 }
 .footer__title:not(:last-child){
   margin: 0 0 32px 0;

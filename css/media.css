@@ -172,6 +172,11 @@
         align-self: flex-start;
         row-gap: 30px;
     }
+
+    .footer__title{
+        pointer-events: auto;
+    }
+
     .footer__information .footer__title,
     .footer__footer-menu .footer__title,
     .footer__useful-links .footer__title {
